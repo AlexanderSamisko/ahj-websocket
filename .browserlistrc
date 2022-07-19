@@ -1,0 +1,6 @@
+[production]
+> 1%
+ie 10
+
+[ssr]
+last 2 node major versions

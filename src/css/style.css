@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #999;
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+}
+
+.desk {
+    width: 90%;
+    min-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/desk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.desk-header {
+    width: 100%;
+    height: 7vh;
+    background-color: #dcdcdc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.desk-header-dot {
+    width: 3vh;
+    height: 3vh;
+    background-color: #c9c8c9;
+    border-radius: 50%;
+    margin-left: 4vh;
+}
+
+.desk-info {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: goldenrod;
+}
+
+.desk-chat-invite {
+    width: 20%;
+    border: 2px solid #999;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 7vh;
+    font-size: 70%;
+    color: #999;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.desk-chat-invite:hover {
+    background-color: brown;
+    color: antiquewhite;
+}
+
+.desk-tickets {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content; 
+    margin-top: 7vh;
+}
+
+.intro-widget {
+    width: 50%;
+    height: 45vh;
+    z-index: 4;
+    background-color: white;
+    border: 2px solid #c9c8c9;
+    border-radius: 6px;
+    left: 25%;
+    top: 35%;
+    color: #c9c8c9;
+}
+
+.intro-title {
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+    font-size: 70%;
+    padding: 5px;
+    border-bottom: 3px solid #c9c8c9;
+}
+
+.intro-content {
+    width: 100%;
+    border-bottom: 3px solid #c9c8c9;
+    display: flex;
+    font-size: 4vh;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.intro-select {
+    width: 48%;
+    cursor: pointer;
+}
+
+.intro-form-space {
+    min-height: 23vh;
+    background-color: aqua;
+    font-size: 3vh;
+    border: 4px solid rgb(25, 229, 192);
+}
+
+.reg-form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-label {
+    display: block;
+    width: fit-content;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.reg-input {
+    display: block;
+}
+
+.reg-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: 20%;
+    border-radius: 5px;
+    height: 6vh;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.note {
+    position: absolute;
+    background-color: bisque;
+    border-radius: 6px;
+    border: 3px solid #c9c8c9;
+    color: #999;
+    width: 50%;
+    height: fit-content;
+    font-size: 3vh;
+    text-align: center;
+    left: 25%;
+    top: 35%;
+}
+
+.note-title {
+    border-bottom: 3px solid #c9c8c9;
+    padding: 1vh;
+}
+
+.note-content {
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+.note-button {
+    padding: 1vh;
+    border: 3px solid #c9c8c9;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.note-button:hover {
+    color: goldenrod;
+    background-color: brown;
+    border: 3px solid white;
+}
+
+.note-button:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: 1vh;
+}
+
+.note-button:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-bottom: 2vh;
+}
+
+.chat-desk {
+    width: 100%;
+    height: 93%;
+    background-color: wheat;
+    border: 7px solid orangered;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.chat-title {
+    width: 100%;
+    padding: 2vh;
+    font-size: 5vh;
+    color: orange;
+    border-bottom: 3px solid #5d7cba;
+}
+
+.middle-wrapper {
+    width: 100%;
+    display: flex;
+    height: 88%;
+}
+
+.chat-users-block {
+    border-top: 3px solid #5d7cba;
+    border-bottom: 3px solid #5d7cba;
+    border-left: 3px solid #5d7cba;
+    width: 50%;
+    min-height: 10vh;
+    height: fit-content;
+    margin-top: 10vh;
+    padding: 2vh;
+}
+
+.chat-widget {
+    width: 100%;
+    min-height: 100%;
+    border-left: 3px solid #5d7cba;
+    box-shadow: inset 10px 5px 5px orangered;
+    background-color: aliceblue;
+    position: relative;
+
+}
+
+.user-card {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 3px solid orangered;
+    border-bottom: 3px solid orangered;
+    border-left: 3px solid orangered;
+    border-radius: 30%;
+    margin-bottom: 2vh;
+}
+
+.user-card-name {
+    width: fit-content;
+    font-size: 4vh;
+    margin-left: 3vh;
+}
+
+.user-status-dot {
+    width: 6vh;
+    height: 2vh;
+    border-radius: 30%;
+    border: 2px solid black;
+    margin-left: 2vh;
+}
+
+.user-status-dot[data-status="offline"] {
+    background-color: red;
+}
+
+.user-status-dot[data-status="online"] {
+    background-color: green;
+}
+
+
+.chat-window {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    border-left: 3px dotted wheat;
+    border-right: 3px dotted wheat;
+    overflow-y: auto;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input {
+    position: absolute;
+    width: 90%;
+    height: 4vh;
+    top: 95%;
+    left: 5%;
+}
+
+.log-form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-label {
+    display: block;
+    width: fit-content;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.log-input {
+    display: block;
+}
+
+.log-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: 20%;
+    border-radius: 5px;
+    height: 6vh;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.message-body[data-author="you"] {
+    align-self: flex-end;
+}
+
+.message-body {
+    width: 50%;
+    border: 2px solid red;
+    border-radius: 20%;
+    color: purple;
+    font-size: 2vh;
+    padding: 2vh;
+    margin-bottom: 1vh;
+}
+
+.message-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.message-author {
+    margin-left: 2vh;
+}
+
+.message-date {
+    margin-left: 2vh;
+}
+
+.message-content {
+    margin-top: 1vh;
+    padding-left: 2vh;
+    text-align: left;
+}
+
